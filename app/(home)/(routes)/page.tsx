@@ -1,5 +1,5 @@
 // import Footer from "../_components/Footer";
-// import About from "../_pages/About";
+import About from "../_pages/About";
 // import Contact from "../_pages/Contact";
 // import Education from "../_pages/Education";
 import Header from "../_pages/Header";
@@ -11,8 +11,8 @@ export default function Home() {
     return (
         <main className='w-full overflow-hidden'>
             <Header />
-            {/* <About />
-      <Work />
+            <About />
+            {/*<Work />
       <Project />
       <Skills />
       <Education />

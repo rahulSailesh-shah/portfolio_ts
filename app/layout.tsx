@@ -3,16 +3,19 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { useEffect, useState } from "react";
-// import ClipLoader from "react-spinners/ClipLoader";
 
 const inter = Inter({ subsets: ["latin"] });
+
+interface Props {
+    children?: React.ReactNode;
+}
 
 // export const metadata = {
 //   title: "Rahul Shah | Full Stack Developer",
 //   description: "Rahul Shah Portfolio website built with Next.js and Tailwind",
 // };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: Props) {
     const [showSplash, setShowSplash] = useState(true);
 
     useEffect(() => {
