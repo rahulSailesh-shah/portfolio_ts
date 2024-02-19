@@ -10,13 +10,13 @@ function NavBar() {
                 <div className='justify-between px-4 lg:max-w-7xl md:items-center md:flex md:px-2'>
                     <div>
                         <div className='flex items-center justify-between py-3 md:py-5 md:block'>
-                            <Link href='/'>
+                            <Link href='/' className='md:ml-16'>
                                 <Image
                                     src='/logo.svg'
                                     width={60}
                                     height={60}
                                     alt='logo'
-                                    className='focus:border-none active:border-none md:ml-12'
+                                    className='focus:border-none active:border-none '
                                 />
                             </Link>
                             <div className='md:hidden'>
