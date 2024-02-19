@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Heading = ({ text }) => {
+const Heading = ({ text }: { text: string }) => {
     return (
         <div className='flex items-center'>
             <Image

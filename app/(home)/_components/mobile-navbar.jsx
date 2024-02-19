@@ -7,13 +7,17 @@ function NavBar() {
     return (
         <div>
             <nav className='w-full bg-black md:bg-transparent fixed top-0 left-0 right-0 z-50'>
-                <div className='justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-2'>
+                <div className='justify-between px-4 lg:max-w-7xl md:items-center md:flex md:px-2'>
                     <div>
                         <div className='flex items-center justify-between py-3 md:py-5 md:block'>
                             <Link href='/'>
-                                <h2 className='text-2xl text-cyan-600 font-bold '>
-                                    LOGO
-                                </h2>
+                                <Image
+                                    src='/logo.svg'
+                                    width={60}
+                                    height={60}
+                                    alt='logo'
+                                    className='focus:border-none active:border-none md:ml-12'
+                                />
                             </Link>
                             <div className='md:hidden'>
                                 <button
@@ -47,7 +51,7 @@ function NavBar() {
                              ${navbar ? "p-12 md:p-0 block" : "hidden"}`}
                         >
                             <ul className='h-screen md:hidden'>
-                                <li className='pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-cyan-900  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
+                                <li className='pb-4 text-xl text-white py-4 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-cyan-900  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
                                     <Link
                                         href='#about'
                                         onClick={() => setNavbar(!navbar)}
@@ -55,7 +59,7 @@ function NavBar() {
                                         About
                                     </Link>
                                 </li>
-                                <li className='pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
+                                <li className='pb-4 text-xl text-white py-4 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
                                     <Link
                                         href='#work'
                                         onClick={() => setNavbar(!navbar)}
@@ -63,7 +67,7 @@ function NavBar() {
                                         Work
                                     </Link>
                                 </li>
-                                <li className='pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
+                                <li className='pb-4 text-xl text-white py-4 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
                                     <Link
                                         href='#contact'
                                         onClick={() => setNavbar(!navbar)}
@@ -71,12 +75,20 @@ function NavBar() {
                                         Contact
                                     </Link>
                                 </li>
-                                <li className='pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
+                                <li className='pb-4 text-xl text-white py-4 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
                                     <Link
                                         href='#projects'
                                         onClick={() => setNavbar(!navbar)}
                                     >
                                         Projects
+                                    </Link>
+                                </li>
+                                <li className='pb-4 text-xl text-white py-4 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
+                                    <Link
+                                        href='#projects'
+                                        onClick={() => setNavbar(!navbar)}
+                                    >
+                                        Resume
                                     </Link>
                                 </li>
                             </ul>

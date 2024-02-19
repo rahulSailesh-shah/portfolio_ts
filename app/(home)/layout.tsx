@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "../(home)/_components/floating-navbar";
-import Navbar from "../(home)/_components/navbar";
+import Navbar from "./_components/mobile-navbar";
 
 interface Props {
     children?: React.ReactNode;
