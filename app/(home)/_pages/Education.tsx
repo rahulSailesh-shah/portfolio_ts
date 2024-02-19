@@ -10,7 +10,7 @@ const Education = () => {
     const edu1Ref = useRef(null);
     const edu2Ref = useRef(null);
 
-    const yProgress = (ref) => {
+    const YProgress = (ref) => {
         const { scrollYProgress } = useScroll({
             target: ref,
             offset: ["0 1", "1.1 1"],
@@ -24,7 +24,7 @@ const Education = () => {
             <motion.div
                 ref={edu1Ref}
                 style={{
-                    opacity: yProgress(edu1Ref),
+                    opacity: YProgress(edu1Ref),
                 }}
                 className='flex lg:flex-row flex-col justify-center lg:mb-32 mb-2'
             >
@@ -85,7 +85,7 @@ const Education = () => {
             <motion.div
                 ref={edu2Ref}
                 style={{
-                    opacity: yProgress(edu2Ref),
+                    opacity: YProgress(edu2Ref),
                 }}
                 className='flex lg:flex-row flex-col-reverse justify-center'
             >
