@@ -6,6 +6,7 @@ import IconButton from "../_components/IconButton";
 import Link from "next/link";
 import { PinContainer } from "../_components/pin";
 import Heading from "../_components/Heading";
+import Image from "next/image";
 
 const Project = () => {
     const project1Ref = useRef(null);
@@ -36,16 +37,21 @@ const Project = () => {
                 <div className='w-full flex lg:flex-row flex-col justify-around lg:mb-[10rem] mb-[4rem]'>
                     <div className=''>
                         <PinContainer
-                            title='/ui.aceternity.com'
-                            href='https://twitter.com/mannupaaji'
+                            title='/figma-clone-coral.vercel.app/'
+                            href='https://figma-clone-coral.vercel.app/'
                         >
-                            <div className='flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] '>
-                                <div className='flex flex-1 w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500' />
+                            <div className='flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 md:w-[30rem] w-[24rem] h-[20rem]'>
+                                <Image
+                                    src='/figma.png'
+                                    layout='fill'
+                                    objectFit='cover'
+                                    alt='logo'
+                                />
                             </div>
                         </PinContainer>
                     </div>
 
-                    <div className='lg:w-[32rem] w-full lg:ml-20 sm:justify-center px-4'>
+                    <div className='lg:w-[32rem] w-full lg:ml-40 sm:justify-center px-4'>
                         <Heading text='01' />
                         <h1 className='lg:text-4xl text-2xl text font-semibold mb-6 text-white'>
                             AI - Imaginate
@@ -67,7 +73,7 @@ const Project = () => {
 
                         <div className='flex mt-4'>
                             <a
-                                href='https://ai-imaginate-frontend.onrender.com/'
+                                href='https://figma-clone-coral.vercel.app/'
                                 target='_blank'
                             >
                                 <IconButton
@@ -77,7 +83,7 @@ const Project = () => {
                             </a>
 
                             <a
-                                href='https://github.com/rahulSailesh-shah/AI-Imaginate'
+                                href='https://github.com/rahulSailesh-shah/figma_clone'
                                 target='_blank'
                             >
                                 <IconButton text='Github' type='Github' />
@@ -95,7 +101,7 @@ const Project = () => {
                 className='lg:w-fit w-full'
             >
                 <div className='w-full flex lg:flex-row flex-col-reverse justify-around lg:mb-[10rem] mb-[4rem]'>
-                    <div className='lg:w-[32rem] w-full lg:mr-20 px-4'>
+                    <div className='lg:w-[32rem] w-full lg:mr-40 px-4'>
                         <Heading text='02' />
                         <h1 className='lg:text-4xl text-2xl text font-semibold mb-6 text-white'>
                             CoDev Space
@@ -136,11 +142,16 @@ const Project = () => {
                     </div>
                     <div className=''>
                         <PinContainer
-                            title='/ui.aceternity.com'
-                            href='https://twitter.com/mannupaaji'
+                            title='/codev-space.onrender.com'
+                            href='https://codev-space.onrender.com'
                         >
-                            <div className='flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] '>
-                                <div className='flex flex-1 w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500' />
+                            <div className='flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 md:w-[30rem] w-[24rem] h-[20rem] '>
+                                <Image
+                                    src='/codev.png'
+                                    layout='fill'
+                                    objectFit='cover'
+                                    alt='logo'
+                                />
                             </div>
                         </PinContainer>
                     </div>
@@ -158,16 +169,21 @@ const Project = () => {
                 <div className='lg:w-fit w-full flex lg:flex-row flex-col justify-around'>
                     <div className=''>
                         <PinContainer
-                            title='/ui.aceternity.com'
-                            href='https://twitter.com/mannupaaji'
+                            title='/rahulSailesh-shah/Route-Tracker'
+                            href='https://github.com/rahulSailesh-shah/Route-Tracker.git'
                         >
-                            <div className='flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] '>
-                                <div className='flex flex-1 w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500' />
+                            <div className='flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 md:w-[30rem] w-[24rem] h-[20rem] '>
+                                <Image
+                                    src='/route.png'
+                                    layout='fill'
+                                    objectFit='cover'
+                                    alt='logo'
+                                />
                             </div>
                         </PinContainer>
                     </div>
 
-                    <div className='lg:w-[32rem] w-full lg:ml-20 px-4'>
+                    <div className='lg:w-[32rem] w-full lg:ml-40 px-4'>
                         <Heading text='03' />
 
                         <h1 className='lg:text-4xl text-2xl text font-semibold mb-6 text-white'>
