@@ -6,7 +6,7 @@ import IconButton from "../_components/IconButton";
 import Link from "next/link";
 import { PinContainer } from "../_components/pin";
 import Heading from "../_components/Heading";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Project = () => {
     const project1Ref = useRef(null);

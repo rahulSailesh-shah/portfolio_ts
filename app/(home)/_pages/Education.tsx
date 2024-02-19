@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Heading from "../_components/Heading";
 
 const Education = () => {

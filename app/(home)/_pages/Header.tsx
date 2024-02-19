@@ -1,7 +1,7 @@
 "use client";
 
 import { LampContainer } from "../_components/lamp";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { motion } from "framer-motion";
 import Button from "../_components/Button";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { useRef } from "react";
 import Button from "../_components/Button";
 import Heading from "../_components/Heading";
