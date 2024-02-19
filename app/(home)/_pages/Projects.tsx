@@ -5,6 +5,7 @@ import { useScroll, motion } from "framer-motion";
 import IconButton from "../_components/IconButton";
 import Link from "next/link";
 import { PinContainer } from "../_components/pin";
+import Heading from "../_components/Heading";
 
 const Project = () => {
     const project1Ref = useRef(null);
@@ -22,18 +23,17 @@ const Project = () => {
 
     return (
         <div
-            className='flex flex-col relative justify-center items-center'
+            className='flex flex-col relative justify-center items-center mt-[10rem]'
             id='projects'
         >
             <motion.div
                 ref={project1Ref}
                 style={{
                     opacity: yProgress(project1Ref),
-                    marginBottom: "10rem",
                 }}
                 className='px-4'
             >
-                <div className='w-full flex lg:flex-row flex-col justify-around'>
+                <div className='w-full flex lg:flex-row flex-col justify-around lg:mb-[10rem] mb-[4rem]'>
                     <div className=''>
                         <PinContainer
                             title='/ui.aceternity.com'
@@ -45,7 +45,8 @@ const Project = () => {
                         </PinContainer>
                     </div>
 
-                    <div className='lg:w-[32rem] w-full ml-20'>
+                    <div className='lg:w-[32rem] w-full lg:ml-20 sm:justify-center px-4'>
+                        <Heading text='01' />
                         <h1 className='lg:text-4xl text-2xl text font-semibold mb-6 text-white'>
                             AI - Imaginate
                         </h1>
@@ -57,7 +58,7 @@ const Project = () => {
                             the option to save the images directly to their
                             devices.
                         </p>
-                        <div className='text-[#6E92F3] text-sm mt-4'>
+                        <div className='text-cyan-500 text-sm mt-4'>
                             <span className='mr-4'>React</span>{" "}
                             <span className='mr-4'>MongoDB</span>{" "}
                             <span className='mr-4'>Dall-E AI</span>{" "}
@@ -90,12 +91,12 @@ const Project = () => {
                 ref={project2Ref}
                 style={{
                     opacity: yProgress(project2Ref),
-                    marginBottom: "10rem",
                 }}
                 className='lg:w-fit w-full'
             >
-                <div className='w-full flex lg:flex-row flex-col justify-around'>
-                    <div className='lg:w-[32rem] w-full mr-20'>
+                <div className='w-full flex lg:flex-row flex-col-reverse justify-around lg:mb-[10rem] mb-[4rem]'>
+                    <div className='lg:w-[32rem] w-full lg:mr-20 px-4'>
+                        <Heading text='02' />
                         <h1 className='lg:text-4xl text-2xl text font-semibold mb-6 text-white'>
                             CoDev Space
                         </h1>
@@ -106,7 +107,7 @@ const Project = () => {
                             collaboration through shared coding rooms, fostering
                             seamless teamwork among users.
                         </p>
-                        <div className='text-[#6E92F3] text-sm mt-4'>
+                        <div className='text-cyan-500 text-sm mt-4'>
                             <span className='mr-4'>Web Sockets</span>{" "}
                             <span className='mr-4'>React</span>{" "}
                             <span className='mr-4'>Redux</span>{" "}
@@ -150,6 +151,7 @@ const Project = () => {
                 ref={project3Ref}
                 style={{
                     opacity: yProgress(project3Ref),
+                    marginBottom: "10rem",
                 }}
                 className='px-4'
             >
@@ -165,7 +167,9 @@ const Project = () => {
                         </PinContainer>
                     </div>
 
-                    <div className='lg:w-[32rem] w-full ml-20'>
+                    <div className='lg:w-[32rem] w-full lg:ml-20 px-4'>
+                        <Heading text='03' />
+
                         <h1 className='lg:text-4xl text-2xl text font-semibold mb-6 text-white'>
                             Route Tracker
                         </h1>
@@ -175,7 +179,7 @@ const Project = () => {
                             them in MongoDB for review, distance tracking, and
                             implementing comprehensive user authentication.
                         </p>
-                        <div className='text-[#6E92F3] text-sm mt-4'>
+                        <div className='text-cyan-500 text-sm mt-4'>
                             <span className='mr-4'>React Native</span>{" "}
                             <span className='mr-4'>Node.js</span>{" "}
                             <span className='mr-4'>MongoDB</span>{" "}

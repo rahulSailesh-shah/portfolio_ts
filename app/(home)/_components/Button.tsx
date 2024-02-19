@@ -9,7 +9,7 @@ const Button = ({ text, to }: Props) => {
     return (
         <a
             href={`#${to}`}
-            className='cursor-pointer bg-[#6E92F3] inline-block px-10 py-3 hover:bg-[rgb(84,114,194)] transition-hover duration-200  rounded-md text-lg font-medium text-[#111111]'
+            className='cursor-pointer bg-cyan-500 inline-block px-10 py-3 hover:bg-cyan-700 transition-hover duration-200  rounded-md text-lg font-medium text-[#111111]'
         >
             {text}
         </a>
