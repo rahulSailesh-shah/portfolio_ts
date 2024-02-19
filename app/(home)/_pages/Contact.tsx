@@ -24,17 +24,29 @@ const Contact = () => {
             return;
         }
 
-        const res = await fetch("http://localhost:3000/api/contact", {
-            method: "POST",
-            body: JSON.stringify({ email, message }),
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-            },
+        const headers = new Headers();
+        headers.append("Content-Type", "application/json");
+
+        const raw = JSON.stringify({
+            email,
+            message,
         });
+
+        const res = await fetch(
+            "https://send-email-api-5tw1.onrender.com/send-email",
+            {
+                method: "POST",
+                headers: headers,
+                body: raw,
+                redirect: "follow",
+            }
+        )
+            .then((response) => response.text())
+            .then((result) => console.log(result))
+            .catch((error) => console.log("error", error));
+
         setEmail("");
         setMessage("");
-        const result = await res.json();
         alert("Thank You For Your Message");
     };
 
