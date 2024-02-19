@@ -16,9 +16,9 @@ export default function Header() {
                     duration: 0.8,
                     ease: "easeInOut",
                 }}
-                className='mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center lg:text-4xl font-medium text-transparent'
+                className=' bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center lg:text-4xl font-medium text-transparent'
             >
-                <div className='lg:w-[56rem] mt-28'>
+                <div className='md:w-[56rem] w-full mt-[10rem]'>
                     <h1 className='mb-4 lg:text-3xl text-xl'>
                         <span className=' font-medium text-[#cdcdcd] pr-2'>
                             R

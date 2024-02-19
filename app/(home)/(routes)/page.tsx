@@ -1,6 +1,6 @@
-// import Footer from "../_components/Footer";
+import Footer from "../_components/Footer";
 import About from "../_pages/About";
-// import Contact from "../_pages/Contact";
+import Contact from "../_pages/Contact";
 import Education from "../_pages/Education";
 import Header from "../_pages/Header";
 import Project from "../_pages/Projects";
@@ -16,8 +16,8 @@ export default function Home() {
             <Project />
             <Skills />
             <Education />
-            {/* <Contact />
-      <Footer />  */}
+            <Contact />
+            <Footer />
         </main>
     );
 }

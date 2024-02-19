@@ -40,10 +40,6 @@ const About = () => {
                     Hi There
                 </h1>
                 <TextGenerateEffect words={words1} />
-                {/* <TextGenerateEffect words={words2} /> */}
-
-                <p className='text-[#cdcdcd] lg:text-xl lg:leading-8 lg:mb-10 mb-4'></p>
-                <p className='text-[#cdcdcd] lg:text-xl lg:leading-8 lg:mb-10 mb-4'></p>
 
                 <div className='mt-10'>
                     <Button text='Send me a message' to='contact' />

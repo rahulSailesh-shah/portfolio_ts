@@ -6,7 +6,7 @@ function NavBar() {
     const [navbar, setNavbar] = useState(false);
     return (
         <div>
-            <nav className='w-full bg-black md:bg-transparent fixed top-0 left-0 right-0 z-50'>
+            <nav className='w-full bg-slate-950 md:bg-transparent fixed top-0 left-0 right-0 z-50'>
                 <div className='justify-between px-4 lg:max-w-7xl md:items-center md:flex md:px-2'>
                     <div>
                         <div className='flex items-center justify-between py-3 md:py-5 md:block'>
@@ -84,12 +84,13 @@ function NavBar() {
                                     </Link>
                                 </li>
                                 <li className='pb-4 text-xl text-white py-4 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent'>
-                                    <Link
-                                        href='#projects'
+                                    <a
                                         onClick={() => setNavbar(!navbar)}
+                                        href='/resume.pdf'
+                                        download='Rahul_Shah_Resume.pdf'
                                     >
                                         Resume
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
