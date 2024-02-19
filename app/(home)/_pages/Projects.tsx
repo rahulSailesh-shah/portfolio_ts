@@ -54,20 +54,19 @@ const Project = () => {
                     <div className='lg:w-[32rem] w-full lg:ml-40 sm:justify-center px-4'>
                         <Heading text='01' />
                         <h1 className='lg:text-4xl text-2xl text font-semibold mb-6 text-white'>
-                            AI - Imaginate
+                            FigPro
                         </h1>
                         <p className='p-1 lg:text-lg text-[#cdcdcd]'>
-                            Developed a React application to facilitate image
-                            creation through the utilization of the Dall-E API.
-                            Users can effortlessly craft images and seamlessly
-                            share them within the community, while also having
-                            the option to save the images directly to their
-                            devices.
+                            Developed a Figma clone with support for live
+                            collaboration, multi-cursors, reactions, and
+                            comments using fabric.js. It supports active user
+                            tracking, comment bubbles, shape creation, image
+                            uploading, and freeform drawing.
                         </p>
                         <div className='text-cyan-500 text-sm mt-4'>
-                            <span className='mr-4'>React</span>{" "}
-                            <span className='mr-4'>MongoDB</span>{" "}
-                            <span className='mr-4'>Dall-E AI</span>{" "}
+                            <span className='mr-4'>Next.js</span>{" "}
+                            <span className='mr-4'>Liveblocks</span>{" "}
+                            <span className='mr-4'>Fabric.js</span>{" "}
                             <span className='mr-4'>Tailwind</span>
                         </div>
 
