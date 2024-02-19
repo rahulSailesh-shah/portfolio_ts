@@ -7,7 +7,7 @@ const Heading = ({ text }: { text: string }) => {
             <Image
                 height={60}
                 width={30}
-                src='./vector.svg'
+                src='/vector.svg'
                 alt='logo'
                 className='w-20 h-20 mr-4'
             />
