@@ -13,7 +13,7 @@ const Project = () => {
     const project2Ref = useRef(null);
     const project3Ref = useRef(null);
 
-    const yProgress = (ref: any) => {
+    const YProgress = (ref: any) => {
         const { scrollYProgress } = useScroll({
             target: ref,
             offset: ["0 1", "1.1 1"],
@@ -30,7 +30,7 @@ const Project = () => {
             <motion.div
                 ref={project1Ref}
                 style={{
-                    opacity: yProgress(project1Ref),
+                    opacity: YProgress(project1Ref),
                 }}
                 className='px-4'
             >
@@ -96,7 +96,7 @@ const Project = () => {
             <motion.div
                 ref={project2Ref}
                 style={{
-                    opacity: yProgress(project2Ref),
+                    opacity: YProgress(project2Ref),
                 }}
                 className='lg:w-fit w-full'
             >
@@ -161,7 +161,7 @@ const Project = () => {
             <motion.div
                 ref={project3Ref}
                 style={{
-                    opacity: yProgress(project3Ref),
+                    opacity: YProgress(project3Ref),
                     marginBottom: "10rem",
                 }}
                 className='px-4'
