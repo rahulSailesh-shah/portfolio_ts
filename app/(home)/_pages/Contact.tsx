@@ -33,7 +33,7 @@ const Contact = () => {
         });
 
         const res = await fetch(
-            "https://send-email-api-5tw1.onrender.com/send-email",
+            "https://7o77znt7g5.execute-api.us-east-1.amazonaws.com/dev/send-email",
             {
                 method: "POST",
                 headers: headers,
